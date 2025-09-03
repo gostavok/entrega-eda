@@ -1,0 +1,12 @@
+### Get balance
+GET http://localhost:3003/balances/fb4c6c91-2f45-4d91-8d4f-3e6b5d61c6b2
+Accept: application/json
+
+
+
+{
+  "id": "59153bc9-351b-4bd7-aa09-788c7082ab40",
+  "account_id_from": "fb4c6c91-2f45-4d91-8d4f-3e6b5d61c6b2",
+  "account_id_to": "59e1fa4e-5c7b-4c52-94a9-8f39c6d0f4e1",
+  "amount": 12
+}

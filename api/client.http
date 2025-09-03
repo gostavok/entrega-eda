@@ -1,0 +1,47 @@
+
+#POST http://localhost:8080/clients HTTP/1.1
+#Content-Type: application/json
+#
+#{
+#    "name": "Teste",
+#    "email": "Teste@Teste.com"
+#}
+#
+
+###
+
+POST http://localhost:8080/accounts HTTP/1.1
+Content-Type: application/json
+
+{
+    "client_id": "7b1d43b6-1f22-4f5f-a72d-1d2e2d4695f9" // ALICE
+}
+
+###
+
+POST http://localhost:8080/accounts HTTP/1.1
+Content-Type: application/json
+
+{
+    "client_id": "a08cfb6a-6b5e-4d54-9c03-5c785d420fd7" // BOB
+}
+
+###
+
+POST http://localhost:8080/accounts HTTP/1.1
+Content-Type: application/json
+
+{
+    "client_id": "d6242bb5-b42c-41ce-95b7-0c6d0ff6f229"
+}
+
+###
+
+POST http://localhost:8080/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+    "account_id_from": "fb4c6c91-2f45-4d91-8d4f-3e6b5d61c6b2",
+    "account_id_to": "59e1fa4e-5c7b-4c52-94a9-8f39c6d0f4e1",
+    "amount": 12
+}
