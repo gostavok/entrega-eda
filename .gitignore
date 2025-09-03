@@ -1,1 +1,2 @@
-.docker
+# Não ignore a pasta .docker
+!.docker
